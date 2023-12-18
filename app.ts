@@ -13,7 +13,6 @@ const createApp = (): Application => {
   // 미들웨어
   app.use(json());
   app.use(urlencoded({ extended: true }));
-
   app.use('/', home);
 
   return app;

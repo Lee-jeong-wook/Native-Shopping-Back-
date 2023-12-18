@@ -1,11 +1,17 @@
 import ItemsInterface from "../interfaces/ItemsInterface";
 
 class Item {
-    #getItems(id:ItemsInterface){
-
+    #getItemsAll(){
+        return {"msg" : "getItemsAll success"};
     }
-    getItems(id:ItemsInterface) {
-        return this.#getItems(id);
+    #getItem(id:ItemsInterface){
+        return {"msg" : "getItem success"};
+    }
+    getItem(id:ItemsInterface) {
+        return this.#getItem(id);
+    }
+    getItemsAll(){
+        return this.#getItemsAll();
     }
 }
 

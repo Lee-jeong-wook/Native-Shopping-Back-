@@ -1,8 +1,8 @@
 import createApp from '../app';
 
 const app = createApp();
-const PORT: number = 3000;
+const PORT: number = 5000;
 
 app.listen(PORT, () => {
-  console.log('서버 가동');
+  console.log(`server is on PORT : ${PORT}`);
 });

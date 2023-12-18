@@ -1,13 +1,20 @@
 import { Request, Response} from "express"; 
 import Item from "../../model/Item";
 import User from "../../interfaces/UserInterfsaces";
+
+const output = {
+    home: async (req:Request, res: Response) => {
+        console.log("hi");
+        res.send("어쨋건 됐죠");
+    }
+}
+
 const post = {
     //쇼핑 상품에 대한 처리
-    home: async (req: Request, res: Response) =>{
-
-    },
     item: async (req: Request, res: Response) => {
         const { id } = req.query;
+        console.log(req);
+        console.log(id);
     },
     basket: async (req: Request, res: Response) => {
         const { id, userID } = req.query;
@@ -25,5 +32,6 @@ const post = {
 }
 
 module.exports= {
+    output,
     post
 };
