@@ -13,7 +13,6 @@ const post = {
     //쇼핑 상품에 대한 처리
     item: async (req: Request, res: Response) => {
         const { id } = req.query;
-        console.log(req);
         console.log(id);
     },
     basket: async (req: Request, res: Response) => {
